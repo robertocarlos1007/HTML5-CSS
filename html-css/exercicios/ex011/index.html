@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <picture>
+        <source media="(max-width: 725px)" srcset="imagens/fotop.png" type="image/png" > 
+        <source media="(max-width: 1025px )" srcset="imagens/fotom.png" type="image/png">
+        <img src="imagens/fotog.png" alt="">
+        
+    </picture>
+    <h2>Primeira maneira de inserir áudio.</h2>
+<p>Utilizando apenas a tag audio.</p>
+    <audio src="audio/happy-mistake.mp3"  controls >  </audio>
+<h2>Segunda maneira de inserir áudio.</h2>
+<audio preload="metadata"  controls >
+    <source src="audio/happy-mistake.mp3" type="audio/mpeg">
+    <source src="audio/happy-mistake.ogg" type="audio/ogg">
+    <source src="audio/happy-mistake.wav" type="audio/wav">
+    <p>Caso o aúdio não funcionou: <a href="audio/happy-mistake.mp3" download="happy-mistake.mp3" type="audio/mpeg">CLIQUE AQUI PARA BAIXAR</a></p>
+</audio>
+</body>
+</html>
